@@ -1,4 +1,6 @@
-# 4.Execution_of_NetworkCommands
+# Ex No:4 Execution of Network Commands
+# Name: Sri Vignesh G
+# Reg No: 212223040204
 ## AIM:
 Use of Network commands in Real Time environment
 ## Software:
@@ -29,7 +31,71 @@ This commands includes
 • Other IP Commands e.g. show ip route etc.
 <BR>
 
+## PROGRAM:
+### PING COMMAND:
+#### Client.py:
+```
+import socket
+from pythonping import ping
+s=socket.socket()
+s.bind(('localhost',8000))
+s.listen(5)
+while True:
+    c,addr=s.accept()
+    print("Connecting from ",addr)
+    try:
+        hostname=c.recv(1024).decode().strip()
+        if hostname:
+            try:
+                response=str(ping(hostname,verbose=True))
+                c.send(response.encode())
+            except Exception as e:
+                c.send("ping failed  {}".format(e).encode())
+        else:
+            c.send("Hostname not provided".encode())
+    except Exception as e:
+        print("Error: ",e)
+    finally:
+        c.close()
+```
+#### Server.py:
+```
+import socket
+s=socket.socket()
+s.connect(('localhost',8000))
+try:
+    while True:
+        ip= input("Enter Website u want to ping :")
+        s.send(ip.encode())
+        response=s.recv(1024).decode()
+        if response:
+            print ("Ping result :",response)
+        else:
+            print ("No response from server")
+except Exception as e:
+    print ("Error:", e)
+finally:
+    s.close()
+```
+## TRACEROUTE COMMAND:
+```
+from scapy.all import* 
+target = ["www.google.com"] 
+result, unans = traceroute(target,maxttl=32) 
+print(result,unans)
+```
+
 ## OUTPUT:
+## PING COMMAND:
+### Client Window:
+![Screenshot 2024-04-20 002515](https://github.com/SriVignesh-G/4.Execution_of_NetworkCommends/assets/147576510/3d05709e-36b9-48f9-9b80-8bc91922d7ce)
+
+### Server Window:
+![Screenshot 2024-04-20 002523](https://github.com/SriVignesh-G/4.Execution_of_NetworkCommends/assets/147576510/c45d2b4f-2c3b-4c07-abb4-087e25049fe2)
+
+## TRACEROUTE COMMAND:
+![Screenshot 2024-04-20 003241](https://github.com/SriVignesh-G/4.Execution_of_NetworkCommends/assets/147576510/8ef0ea0a-5f02-48c2-b1bf-24d6ff1bd02b)
+
 
 ## Result
-Thus Execution of Network commands Performed 
+Thus Execution of Network commands Performed. 
