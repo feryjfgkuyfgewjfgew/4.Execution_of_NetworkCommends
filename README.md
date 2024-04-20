@@ -1,6 +1,6 @@
 # Ex No:4 Execution of Network Commands
-# Name: Sri Vignesh G
-# Reg No: 212223040204
+# Name: naresh.r
+# Reg No: 212223240104
 ## AIM:
 Use of Network commands in Real Time environment
 ## Software:
