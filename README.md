@@ -1,6 +1,6 @@
 # Ex No:4 Execution of Network Commands
-# Name: SUMANGUNA
-# Reg No: 23014256
+# Name: NARESH.R
+# Reg No: 212223240104
 ## AIM:
 Use of Network commands in Real Time environment
 ## Software:
