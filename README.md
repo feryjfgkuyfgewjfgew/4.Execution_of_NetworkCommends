@@ -101,4 +101,4 @@ print(result,unans)
 
 
 ## Result
-Thus Execution of Network commands Performed. 
+Thus The Execution of Network commands Performed. 
