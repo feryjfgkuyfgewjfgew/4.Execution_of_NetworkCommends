@@ -88,13 +88,16 @@ print(result,unans)
 ## OUTPUT:
 ## PING COMMAND:
 ### Client Window:
-![Screenshot 2024-04-20 002515](https://github.com/SriVignesh-G/4.Execution_of_NetworkCommends/assets/147576510/3d05709e-36b9-48f9-9b80-8bc91922d7ce)
+![Screenshot 2024-05-16 163813](https://github.com/feryjfgkuyfgewjfgew/4.Execution_of_NetworkCommends/assets/150319377/66761cb5-ea3a-4dfa-b9b8-a4a5c88f3928)
+
 
 ### Server Window:
-![Screenshot 2024-04-20 002523](https://github.com/SriVignesh-G/4.Execution_of_NetworkCommends/assets/147576510/c45d2b4f-2c3b-4c07-abb4-087e25049fe2)
+![Screenshot 2024-05-16 163825](https://github.com/feryjfgkuyfgewjfgew/4.Execution_of_NetworkCommends/assets/150319377/9e814673-2439-4b7f-870f-d0b823b31ba8)
+
 
 ## TRACEROUTE COMMAND:
-![Screenshot 2024-04-20 003241](https://github.com/SriVignesh-G/4.Execution_of_NetworkCommends/assets/147576510/8ef0ea0a-5f02-48c2-b1bf-24d6ff1bd02b)
+![Screenshot 2024-05-16 163858](https://github.com/feryjfgkuyfgewjfgew/4.Execution_of_NetworkCommends/assets/150319377/2ed436f2-10d5-40f6-84c9-1b0d2761555c)
+
 
 
 ## Result
